@@ -355,6 +355,8 @@ section {
   height: 581px;
   position: absolute;
 
+  padding: 40px;
+
   background-color: var(--main-background-color);
 
   top: 50%;
@@ -399,8 +401,7 @@ section {
 
 /* <!-- Modal window form--> */
 .user-modal-title {
-  margin: 40px;
-  margin-bottom: 12px;
+  
 
   display: flex;
   justify-content: center;
@@ -415,16 +416,15 @@ section {
 }
 
 .user-modal-form {
-  margin-right: 40px;
-  margin-bottom: 20px;
-  margin-left: 40px;
-  text-align: center;
+ text-align: center;
 }
 
 .user-modal-label {
   display: block;
   position: relative;
   text-align: left;
+
+  margin-bottom: 10px;
 
   transition: fill 250ms var(--timing-function);
 }
@@ -476,7 +476,7 @@ section {
   width: 100%;
   min-height: 120px;
 
-  margin-bottom: 20px;
+  
 
   padding-top: 16px;
   padding-left: 12px;
@@ -536,7 +536,7 @@ section {
 
   margin-right: 7px;
 
-  outline: 2px solid var(--secondary-text-color);
+  border: 2px solid var(--secondary-text-color);
   outline-offset: -2px;
   border-radius: 2px;
 
@@ -547,6 +547,11 @@ section {
 
 .checkbox:checked + .custom-checkbox {
   background-color: var(--accent-color);
+  
+}
+
+.checkbox:focus + .custom-checkbox {
+  border-color: var(--accent-color);
   outline: transparent;
 }
 
